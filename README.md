@@ -22,18 +22,22 @@ The `hello_python.py` file currently covers:
 - Logical operators
 - `for` and `while` loops
 - Nested loops and loop `else` clauses
+- Functions, parameters, arguments, and return values
+- Variable-length positional arguments (`*args`)
 
 ## Project Structure
 
 ```text
 Python 101/
 ├── app.py
+├── functions.py
 ├── hello_python.py
 └── README.md
 ```
 
 - `hello_python.py`: Main learning file with documented examples.
 - `app.py`: Small collection of introductory string examples.
+- `functions.py`: Documented examples of functions, parameters, arguments, and return values.
 - `README.md`: Project overview and learning progress.
 
 ## Requirements
@@ -63,6 +67,12 @@ You can also run the smaller introductory example:
 python3 app.py
 ```
 
+Run the function examples:
+
+```bash
+python3 functions.py
+```
+
 ## Learning Roadmap
 
 This roadmap follows a progressive approach: learn the foundations, practice each concept, build
@@ -82,7 +92,7 @@ small projects, adopt professional tools, choose a specialization, and complete 
 - [x] Conditional statements
 - [x] Loops
 - [ ] Lists, tuples, sets, and dictionaries
-- [ ] Functions
+- [x] Functions
 - [ ] Exceptions
 - [ ] Modules and packages
 - [ ] Classes and objects
