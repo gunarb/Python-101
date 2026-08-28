@@ -17,6 +17,11 @@ The `hello_python.py` file currently covers:
 - Basic arithmetic operators
 - Built-in numeric functions
 - The `math` module
+- Type conversion
+- Conditional statements
+- Logical operators
+- `for` and `while` loops
+- Nested loops and loop `else` clauses
 
 ## Project Structure
 
@@ -72,10 +77,10 @@ small projects, adopt professional tools, choose a specialization, and complete 
 - [x] Numbers and arithmetic operators
 - [x] Built-in numeric functions and the `math` module
 - [x] Membership operators (`in` and `not in`)
-- [ ] Type conversion
-- [ ] Comparison and logical operators
-- [ ] Conditional statements
-- [ ] Loops
+- [x] Type conversion
+- [x] Comparison and logical operators
+- [x] Conditional statements
+- [x] Loops
 - [ ] Lists, tuples, sets, and dictionaries
 - [ ] Functions
 - [ ] Exceptions

@@ -60,7 +60,7 @@ testing_formatting_uses = f"{len(first)} {2 + 2}"
 print(testing_formatting_uses)
 
 #######################################
-# Methods on a string for Python
+# Common string methods
 #######################################
 
 # upper: converts the entire string to uppercase
@@ -102,3 +102,116 @@ print(f"Exponentiation 10 ** 3 = {10 ** 3}")
 print(f"Round 2.9: {round(2.9)}")
 print(f"Absolute value of -2.9: {abs(-2.9)}")
 print(f"Ceiling of 2.2: {math.ceil(2.2)}")
+
+#######################################
+# Working with type conversion
+#######################################
+
+# input returns a string, so int converts the value before adding a number
+# x = input("x: ")
+# y = int(x) + 1
+# print(f"x: {x}, y: {y}")
+
+# Common falsy values in Python include an empty string, zero, and None: "", 0, None
+
+#######################################
+# Working with conditional statements
+#######################################
+
+temperature = 15
+if temperature > 30:
+    print("It's warm")
+    print("Drink water")
+elif temperature > 20:
+    print("It's nice")
+else:
+    print("It's cold")
+print("Done")
+
+age = 22
+
+# Full if/else statement
+if age >= 18:
+    message = "Eligible"
+else:
+    message = "Not eligible"
+print(f"\nfull if/else: {message}")
+
+# Conditional expression (also known as a ternary operator)
+message_ternary = "Eligible" if age >= 18 else "Not eligible"
+print(f"\nternary condition: {message_ternary}")
+
+# Logical operators
+
+high_income = False
+good_credit = True
+student = True
+
+print("\nAnd operator")
+if high_income and good_credit:
+    print("Eligible")
+else:
+    print("Not eligible")
+
+print("\nOr operator")
+if high_income or good_credit:
+    print("Eligible")
+else:
+    print("Not eligible")
+
+print("\nNot operator")
+if not student:
+    print("Eligible")
+else:
+    print("Not eligible")
+
+print("\nAll the operators")
+if (high_income or good_credit) and not student:
+    print("Eligible")
+else:
+    print("Not eligible")
+
+#######################################
+# Working with for loops
+#######################################
+
+# range(3) starts at 0 by default and stops before 3
+for number in range(3):
+    print("Attempt", number + 1, (number + 1) * ".")
+
+# Start at 1 and stop before 4, avoiding the need to add 1 inside the loop
+for number in range(1, 4):
+    print("Attempt", number, number * ".")
+
+# Start at 1, stop before 10, and increment by 2 on each iteration
+for number in range(1, 10, 2):
+    print("Attempt", number, number * ".")
+
+# Try up to three times and exit the loop early when successful
+successful = True
+for number in range(3):
+    print("Attempt")
+    if successful:
+        print("Successful")
+        break
+
+# The else block runs only when the loop finishes without encountering break
+successful = False
+for number in range(3):
+    print("Attempt")
+    if successful:
+        print("Successful")
+        break
+else:
+    print("Attempted 3 times and failed")
+
+# Nested loop: run the inner loop completely for each outer-loop iteration
+for x in range(5):
+    for y in range(3):
+        print(f"({x}, {y})")
+
+# Keep requesting input until the user enters "quit" (case-insensitive)
+command = ""
+while command.lower() != "quit":
+    command = input(">")
+    print("ECHO", command)
